@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA1</title>
+</head>
+<body>
+    <form action="index.html" onsubmit="return myFunction()">
+        <fieldset form="SignIn">
+            <legend id="leg">Sign In</legend>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="Fullname" onblur="OnBlurFunc1()" onfocus="OnFocusFunc1()"><br>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="Username" onblur="OnBlurFunc2()" onfocus="OnFocusFunc2()"><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="Email" onblur="OnBlurFunc3()" onfocus="OnFocusFunc3()"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="Password" onblur="OnBlurFunc4()" onfocus="OnFocusFunc4()"><br>
+
+            <label for="gender">Gender:</label><br>
+            <select name="Gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Others">Prefer not to say</option>
+            </select><br>
+
+            <label for="hob">Hobbies</label><br>
+            <textarea name="hob" id="hobbies" cols="50" rows="6" onblur="OnBlurFunc5()" onfocus="OnFocusFunc5()"></textarea><br>
+
+            <input type="submit" value="Submit Form" id="submit">
+            <input type = "reset" value = "Reset" id="reset">
+
+        </fieldset>
+
+        <fieldset form="Information">
+            <legend id="leg">Information</legend>
+            <div id="output"></div>
+        </fieldset>
+        
+    </form>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
